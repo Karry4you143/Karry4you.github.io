@@ -1,7 +1,190 @@
-<!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head><title>
+	STS
+</title>
+    <script
+        src="jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"></script>
+       <script language="javascript" src="NeoKicks.js"></script>
+     <link rel="stylesheet" href="style.css" type="text/css" />
+     <style type="text/css"> 
+        body,pre,input, .NKTextBox {
+          font-family: Courier !important; 
+          text-transform: full-width;
+          letter-spacing: 0.012em; 
+        }
+        input:focus{
+            outline: none;
+        }
+    </style>
+    </head>
+<body onhelp="TrapKey()" onload="SetInitialCursor()" onkeydown="HandleKeyPress()" onkeyup="onKeyUpCursorSet()">
+    <form method="post" action="./RGR01M_RGR01M.aspx" id="form1" onsubmit="GetCursorPosition()" autocomplete="off">
+<div class="aspNetHidden">
+<input type="hidden" name="CPOSN" id="CPOSN" value="" />
+<input type="hidden" name="KEYPRESS" id="KEYPRESS" value="" />
+<input type="hidden" name="MDT" id="MDT" value="000000000000000000000000000000000000000000000000000000000000000000" />
+<input type="hidden" name="ERASEEOF" id="ERASEEOF" value="000000000000000000000000000000000000000000000000000000000000000000" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJMTk5ODExMjE4ZGT+iWe4mfrXS3R5/MBSfrkc5knWBQ==" />
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="F03D51FD" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAEM6suIiTPD51Pwipo01lqGv4ps5eq+B27rvzEvP7kY5zsNHb8iBwlMGizpOp7VI0kQxbusrXyGZaTsX6TUVgLZbX64K0FlqZxO26LtXxKPbyk6NpuRpk9+lMAupm2Iysd4U0st2a54i4xz0yEvgNGzVMjm/6vhLYV4GOyU5S2i6Jpbxn04RfDi44SY82H2y/wZtoE3CmRcEu1iwEFPewD0jweVDRIE2/a/Cv568hTH0PBSr1GPdmST+KG3PVm0uKIf2FTpajtO91/GoNfTfLkEny58FBPDQm10Zeg/DNqrWpPkv5/LLK6GN9E7kUkwvNZ9YYRv+8u6+9uXQ0m/QPsx+V6vX/3BD4Q1lkdNdm/QIVyXHAqXVOOAMIB+GqLXr/LKu2NgXQ6VfRBkChNx2a5eh6mFFEsX8CPLVkl2uGwUQHtwy8BcqEGXdRQP1bns054hL8zfE4UZ7HSyrKDuMdfynx/hGZZv8rjScZt/AoJGNXW5RF5+9AT1tlnGG5aCBRssq5bQAhpnfVfmSbQzKITWZ9yP5qJfcR4nwgOkb6C5FEBr1C5JcWqaRyR5+KD0y9H+nAsC8S28jBjhQt4be+w1vvgFBLaLNVjD0kAjfIm1NGUXcdipRvTfDYIvrbjr/BvB8lZt9znPG2IWwxuETy00YWb94NpEIu97BwgCgtKt6k39zzuJ5CVGBS0LDeENfM3anS8tMQu+itZzXA85HaXdDHptTMLIRfcYvEZcbxH8QTWjCj7gLWy9eLQb/cpV1Lr8EsbBSz1YrGAoFU+3jfk0gfJxuCZlgX5A2E2X8phzrd53RAZugf4HeRhm/FeSxX43IM0snYgo1mL15LT2Q9OWhMtb/YX2z/vpWVf5jo16a4oqAjzxH831KLT3Bl2M2n0P7wnZBCPDnqlLid3RuCvePAPqY+queWlyVMUDfHesC4U6BTLe+MQPSQUSg84ov/RZYo2oE0zDLadSN9Nl5p+6bfopwRFANzb4Ld3IQ7iWXjIqpsgTLsRvfJDvPxW6uW+BldDf1Znt34O2jLqZKtnJCVW2NLU+Gf+WEZpLFBz9poMVNhEQqHR3XfYsM8QjIOCCOAYXsu1ef+mlXIBMZ688ZuWUpSOU9ABXJByOJ5TbWHMrOi8yqVWCgI2O27kywtSwnaUVUflZExS784BlBPzlHDnvliEYHqCQcf6uoCFvZlOSaFbE7pUb4OpyfCj9lRVnILO2cLfrFJMbd6wkdRf6xt33jOhsL9WVbmZmUwnLP7daavKPwJ3bDUE5YdxBQWR3KzQpOfA+Gi/tHwqv3sZ7gUadaRRn++UQB+Uoyw9LRiLx7tAkYliOk/m2f6fHc8P7b+vPTt3FpBZsErK6nvAX4Ktlj1rsneLdHTwnhPgSwI3yXAFxHuK49lB6i5W31Xp1sQWixdO1bJzM0E4YnpHDm1yAq7sATMQ9JZZNOylbnANp/1js=" />
+</div>
+    <div>
+        
+
+    <table align="center">
+        <tr>
+              <td>
+                  <div style="PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 11pt; PADDING-BOTTOM: 0px; MARGIN: 0px; WIDTH: 720px; PADDING-TOP: 0px; FONT-FAMILY: Monospace; POSITION: relative; HEIGHT: 408px;">
+                    <div class="NKLabelBright" style="white-space:pre; POSITION:absolute; TOP: 0px; LEFT: 9px;"><pre>RGR01M                     REGISTRATION MAINTENANCE</pre></div>
+                    <input name="ctl00$NeoKicksContent$NCRNTDTE" type="text" value="05/19/24" maxlength="8" readonly="readonly" id="NeoKicksContent_NCRNTDTE" class="NKTextBoxProtectedBright NKTextBoxBright" nkidx="0" style="height:17px;width:72px;POSITION:absolute; TOP: 0px; LEFT: 639px;" />
+                    <div class="NKLabelBright" style="white-space:pre; POSITION:absolute; TOP: 17px; LEFT: 9px;"><pre>Fastpath:*</pre></div>
+                    <input name="ctl00$NeoKicksContent$NTRNSFR" type="text" value="       " maxlength="7" id="NeoKicksContent_NTRNSFR" class="NKTextBoxGreen" nkidx="1" style="height:17px;width:63px;POSITION:absolute; TOP: 17px; LEFT: 108px;" />
+                    <div class="NKLabelBright" style="white-space:pre; POSITION:absolute; TOP: 17px; LEFT: 270px;"><pre>GENERAL INFORMATION</pre></div>
+                    <input name="ctl00$NeoKicksContent$NENVID" type="text" value="AVL - TATG" maxlength="10" readonly="readonly" id="NeoKicksContent_NENVID" class="NKTextBoxYellow" nkidx="2" style="height:17px;width:90px;POSITION:absolute; TOP: 17px; LEFT: 621px;" />
+                    <div class="NKLabelTurquoise" style="white-space:pre; POSITION:absolute; TOP: 51px; LEFT: 9px;"><pre>Reg Nbr :</pre></div>
+                    <input name="ctl00$NeoKicksContent$NREGNBR" type="text" value="   519820" maxlength="9" readonly="readonly" id="NeoKicksContent_NREGNBR" class="NKTextBox" nkidx="3" style="height:17px;width:81px;POSITION:absolute; TOP: 51px; LEFT: 108px;" />
+                    <div class="NKLabelTurquoise" style="white-space:pre; POSITION:absolute; TOP: 51px; LEFT: 216px;"><pre>Shipment Nbr:</pre></div>
+                    <input name="ctl00$NeoKicksContent$NSHPMTNO" type="text" value="001" maxlength="3" readonly="readonly" id="NeoKicksContent_NSHPMTNO" class="NKTextBox" nkidx="4" style="height:17px;width:27px;POSITION:absolute; TOP: 51px; LEFT: 342px;" />
+                    <div class="NKLabelTurquoise" style="white-space:pre; POSITION:absolute; TOP: 51px; LEFT: 396px;"><pre>Entry Date:</pre></div>
+                    <input name="ctl00$NeoKicksContent$NENTRYDT" type="text" value="05/19/24" maxlength="8" readonly="readonly" id="NeoKicksContent_NENTRYDT" class="NKTextBoxProtectedBright NKTextBoxBright" nkidx="5" style="height:17px;width:72px;POSITION:absolute; TOP: 51px; LEFT: 504px;" />
+                    <div class="NKLabelTurquoise" style="white-space:pre; POSITION:absolute; TOP: 68px; LEFT: 9px;"><pre>Reg Type:*</pre></div>
+                    <input name="ctl00$NeoKicksContent$NREGTYPE" type="text" value="REG" maxlength="3" readonly="readonly" id="NeoKicksContent_NREGTYPE" class="NKTextBox" nkidx="6" style="height:17px;width:27px;POSITION:absolute; TOP: 68px; LEFT: 108px;" />
+                    <div class="NKLabelTurquoise" style="white-space:pre; POSITION:absolute; TOP: 68px; LEFT: 216px;"><pre>Shpmt Status:*</pre></div>
+                    <input name="ctl00$NeoKicksContent$NSHPMTST" type="text" value="A" maxlength="1" readonly="readonly" id="NeoKicksContent_NSHPMTST" class="NKTextBoxProtectedBright NKTextBoxBright" nkidx="7" style="height:17px;width:9px;POSITION:absolute; TOP: 68px; LEFT: 351px;" />
+                    <div class="NKLabelTurquoise" style="white-space:pre; POSITION:absolute; TOP: 68px; LEFT: 396px;"><pre>Reg Date  :</pre></div>
+                    <input name="ctl00$NeoKicksContent$NREGDT" type="text" value="05/19/24" maxlength="8" readonly="readonly" id="NeoKicksContent_NREGDT" class="NKTextBox" nkidx="8" style="height:17px;width:72px;POSITION:absolute; TOP: 68px; LEFT: 504px;" />
+                    <div class="NKLabelTurquoise" style="white-space:pre; POSITION:absolute; TOP: 85px; LEFT: 9px;"><pre>Shipper Type :*</pre></div>
+                    <input name="ctl00$NeoKicksContent$NSHPTYPE" type="text" value="NAT" maxlength="3" id="NeoKicksContent_NSHPTYPE" class="NKTextBoxGreen" nkidx="9" cursor="1" style="height:17px;width:27px;POSITION:absolute; TOP: 85px; LEFT: 153px;" />
+                    <input name="ctl00$NeoKicksContent$NSHPDESC" type="text" value="NATIONAL ACCOUNT                        " maxlength="40" readonly="readonly" id="NeoKicksContent_NSHPDESC" class="NKTextBoxProtectedBright NKTextBoxBright" nkidx="10" style="height:17px;width:360px;POSITION:absolute; TOP: 85px; LEFT: 216px;" />
+                    <div class="NKLabelTurquoise" style="white-space:pre; POSITION:absolute; TOP: 102px; LEFT: 9px;"><pre>Payment&gt;Type :*</pre></div>
+                    <input name="ctl00$NeoKicksContent$NPAYTYPE" type="text" value="CHG" maxlength="3" id="NeoKicksContent_NPAYTYPE" class="NKTextBoxGreen" nkidx="11" style="height:17px;width:27px;POSITION:absolute; TOP: 102px; LEFT: 153px;" />
+                    <input name="ctl00$NeoKicksContent$NPAYDESC" type="text" value="CHARGE                 " maxlength="23" readonly="readonly" id="NeoKicksContent_NPAYDESC" class="NKTextBoxProtectedBright NKTextBoxBright" nkidx="12" style="height:17px;width:207px;POSITION:absolute; TOP: 102px; LEFT: 216px;" />
+                    <div class="NKLabelTurquoise" style="white-space:pre; POSITION:absolute; TOP: 102px; LEFT: 432px;"><pre>Coll SP :*</pre></div>
+                    <input name="ctl00$NeoKicksContent$NCOLLSP" type="text" value="BKR" maxlength="3" id="NeoKicksContent_NCOLLSP" class="NKTextBoxGreen" nkidx="13" style="height:17px;width:27px;POSITION:absolute; TOP: 102px; LEFT: 531px;" />
+                    <div class="NKLabelTurquoise" style="white-space:pre; POSITION:absolute; TOP: 102px; LEFT: 585px;"><pre>Method :*</pre></div>
+                    <input name="ctl00$NeoKicksContent$NPAYMETH" type="text" value="   " maxlength="3" id="NeoKicksContent_NPAYMETH" class="NKTextBoxGreen" nkidx="14" style="height:17px;width:27px;POSITION:absolute; TOP: 102px; LEFT: 675px;" />
+                    <div class="NKLabelTurquoise" style="white-space:pre; POSITION:absolute; TOP: 119px; LEFT: 9px;"><pre>Authrty Type :*</pre></div>
+                    <input name="ctl00$NeoKicksContent$NATHTYPE" type="text" value="INTER" maxlength="5" id="NeoKicksContent_NATHTYPE" class="NKTextBoxGreen" nkidx="15" style="height:17px;width:45px;POSITION:absolute; TOP: 119px; LEFT: 153px;" />
+                    <input name="ctl00$NeoKicksContent$NAUTDESC" type="text" value="INTERSTATE                              " maxlength="40" readonly="readonly" id="NeoKicksContent_NAUTDESC" class="NKTextBoxProtectedBright NKTextBoxBright" nkidx="16" style="height:17px;width:360px;POSITION:absolute; TOP: 119px; LEFT: 216px;" />
+                    <div class="NKLabelTurquoise" style="white-space:pre; POSITION:absolute; TOP: 136px; LEFT: 9px;"><pre>Shipment Type:*</pre></div>
+                    <input name="ctl00$NeoKicksContent$NSPMTTYP" type="text" value="HHG" maxlength="3" id="NeoKicksContent_NSPMTTYP" class="NKTextBoxGreen" nkidx="17" style="height:17px;width:27px;POSITION:absolute; TOP: 136px; LEFT: 153px;" />
+                    <input name="ctl00$NeoKicksContent$NSPMTDSC" type="text" value="HOUSEHOLD GOODS (PART OF RELOCATION)    " maxlength="40" readonly="readonly" id="NeoKicksContent_NSPMTDSC" class="NKTextBoxProtectedBright NKTextBoxBright" nkidx="18" style="height:17px;width:360px;POSITION:absolute; TOP: 136px; LEFT: 216px;" />
+                    <div class="NKLabelTurquoise" style="white-space:pre; POSITION:absolute; TOP: 153px; LEFT: 9px;"><pre>Product      :*</pre></div>
+                    <input name="ctl00$NeoKicksContent$NPRODUCT" type="text" value="    " maxlength="4" id="NeoKicksContent_NPRODUCT" class="NKTextBoxGreen" nkidx="19" style="height:17px;width:36px;POSITION:absolute; TOP: 153px; LEFT: 153px;" />
+                    <input name="ctl00$NeoKicksContent$NPRDDESC" type="text" value="                                        " maxlength="40" readonly="readonly" id="NeoKicksContent_NPRDDESC" class="NKTextBoxProtectedBright NKTextBoxBright" nkidx="20" style="height:17px;width:360px;POSITION:absolute; TOP: 153px; LEFT: 216px;" />
+                    <div class="NKLabelTurquoise" style="white-space:pre; POSITION:absolute; TOP: 170px; LEFT: 9px;"><pre>Shipper Last Nme:</pre></div>
+                    <input name="ctl00$NeoKicksContent$NSHPLNAM" type="text" value="COPY OF 379083                " maxlength="30" id="NeoKicksContent_NSHPLNAM" class="NKTextBoxGreen" nkidx="21" style="height:17px;width:270px;POSITION:absolute; TOP: 170px; LEFT: 171px;" />
+                    <div class="NKLabelTurquoise" style="white-space:pre; POSITION:absolute; TOP: 170px; LEFT: 450px;"><pre>First Nme:</pre></div>
+                    <input name="ctl00$NeoKicksContent$NSHPFRST" type="text" value="JQ             " maxlength="15" id="NeoKicksContent_NSHPFRST" class="NKTextBoxGreen" nkidx="22" style="height:17px;width:135px;POSITION:absolute; TOP: 170px; LEFT: 549px;" />
+                    <div class="NKLabelTurquoise" style="white-space:pre; POSITION:absolute; TOP: 187px; LEFT: 9px;"><pre>Cnsgnee Last Nme:</pre></div>
+                    <input name="ctl00$NeoKicksContent$NCNSGLST" type="text" value="C0419 NTE                     " maxlength="30" id="NeoKicksContent_NCNSGLST" class="NKTextBoxGreen" nkidx="23" style="height:17px;width:270px;POSITION:absolute; TOP: 187px; LEFT: 171px;" />
+                    <div class="NKLabelTurquoise" style="white-space:pre; POSITION:absolute; TOP: 187px; LEFT: 450px;"><pre>First Nme:</pre></div>
+                    <input name="ctl00$NeoKicksContent$NCSGFRST" type="text" value="031924         " maxlength="15" id="NeoKicksContent_NCSGFRST" class="NKTextBoxGreen" nkidx="24" style="height:17px;width:135px;POSITION:absolute; TOP: 187px; LEFT: 549px;" />
+                    <div class="NKLabelTurquoise" style="white-space:pre; POSITION:absolute; TOP: 204px; LEFT: 9px;"><pre>Trans-Mgmt-Office&gt; Origin:</pre></div>
+                    <input name="ctl00$NeoKicksContent$NORGTMO" type="text" value="    " maxlength="4" id="NeoKicksContent_NORGTMO" class="NKTextBoxGreen" nkidx="25" style="height:17px;width:36px;POSITION:absolute; TOP: 204px; LEFT: 252px;" />
+                    <div class="NKLabelTurquoise" style="white-space:pre; POSITION:absolute; TOP: 204px; LEFT: 306px;"><pre>Dest:</pre></div>
+                    <input name="ctl00$NeoKicksContent$NDESTTMO" type="text" value="    " maxlength="4" id="NeoKicksContent_NDESTTMO" class="NKTextBoxGreen" nkidx="26" style="height:17px;width:36px;POSITION:absolute; TOP: 204px; LEFT: 360px;" />
+                    <div class="NKLabelTurquoise" style="white-space:pre; POSITION:absolute; TOP: 204px; LEFT: 414px;"><pre>SCAC:</pre></div>
+                    <input name="ctl00$NeoKicksContent$NSCAC" type="text" value="    " maxlength="4" readonly="readonly" id="NeoKicksContent_NSCAC" class="NKTextBox" nkidx="27" style="height:17px;width:36px;POSITION:absolute; TOP: 204px; LEFT: 468px;" />
+                    <div class="NKLabelTurquoise" style="white-space:pre; POSITION:absolute; TOP: 204px; LEFT: 531px;"><pre>FSP:</pre></div>
+                    <input name="ctl00$NeoKicksContent$NFPKSVC" type="text" value="N" maxlength="1" id="NeoKicksContent_NFPKSVC" class="NKTextBoxGreen" nkidx="28" style="height:17px;width:9px;POSITION:absolute; TOP: 204px; LEFT: 576px;" />
+                    <div class="NKLabelTurquoise" style="white-space:pre; POSITION:absolute; TOP: 204px; LEFT: 612px;"><pre>X-HAUL?</pre></div>
+                    <input name="ctl00$NeoKicksContent$NXHAUL" type="text" value="N" maxlength="1" id="NeoKicksContent_NXHAUL" class="NKTextBoxGreen" nkidx="29" style="height:17px;width:9px;POSITION:absolute; TOP: 204px; LEFT: 684px;" />
+                    <input name="ctl00$NeoKicksContent$NCSTNBRL" type="text" value="Natl Acct Nbr:" maxlength="14" readonly="readonly" id="NeoKicksContent_NCSTNBRL" class="NKTextBoxTurquoise" nkidx="30" style="height:17px;width:126px;POSITION:absolute; TOP: 221px; LEFT: 9px;" />
+                    <input name="ctl00$NeoKicksContent$NCSTNBR" type="text" value="30093119" maxlength="8" id="NeoKicksContent_NCSTNBR" class="NKTextBoxGreen" nkidx="31" style="height:17px;width:72px;POSITION:absolute; TOP: 221px; LEFT: 144px;" />
+                    <div class="NKLabelTurquoise" style="white-space:pre; POSITION:absolute; TOP: 221px; LEFT: 243px;"><pre>Customer Nme:*</pre></div>
+                    <input name="ctl00$NeoKicksContent$NCSTNAME" type="text" value="NORTHWESTERN UNIVERSITY       " maxlength="30" id="NeoKicksContent_NCSTNAME" class="NKTextBoxGreen" nkidx="32" style="height:17px;width:270px;POSITION:absolute; TOP: 221px; LEFT: 378px;" />
+                    <div class="NKLabelTurquoise" style="white-space:pre; POSITION:absolute; TOP: 238px; LEFT: 9px;"><pre>Storage Authorization: Origin:</pre></div>
+                    <input name="ctl00$NeoKicksContent$NSITORIG" type="text" value="N" maxlength="1" id="NeoKicksContent_NSITORIG" class="NKTextBoxGreen" nkidx="33" style="height:17px;width:9px;POSITION:absolute; TOP: 238px; LEFT: 288px;" />
+                    <div class="NKLabelTurquoise" style="white-space:pre; POSITION:absolute; TOP: 238px; LEFT: 306px;"><pre>Days:</pre></div>
+                    <input name="ctl00$NeoKicksContent$NSITODAY" type="text" value="   " maxlength="3" id="NeoKicksContent_NSITODAY" class="NKTextBoxGreen" nkidx="34" style="height:17px;width:27px;POSITION:absolute; TOP: 238px; LEFT: 360px;" />
+                    <div class="NKLabelTurquoise" style="white-space:pre; POSITION:absolute; TOP: 238px; LEFT: 396px;"><pre>Destination:</pre></div>
+                    <input name="ctl00$NeoKicksContent$NSITDEST" type="text" value="N" maxlength="1" id="NeoKicksContent_NSITDEST" class="NKTextBoxGreen" nkidx="35" style="height:17px;width:9px;POSITION:absolute; TOP: 238px; LEFT: 513px;" />
+                    <div class="NKLabelTurquoise" style="white-space:pre; POSITION:absolute; TOP: 238px; LEFT: 531px;"><pre>Days:</pre></div>
+                    <input name="ctl00$NeoKicksContent$NSITDDAY" type="text" value="   " maxlength="3" id="NeoKicksContent_NSITDDAY" class="NKTextBoxGreen" nkidx="36" style="height:17px;width:27px;POSITION:absolute; TOP: 238px; LEFT: 585px;" />
+                    <div class="NKLabelTurquoise" style="white-space:pre; POSITION:absolute; TOP: 255px; LEFT: 9px;"><pre>Agrmt Id:*</pre></div>
+                    <input name="ctl00$NeoKicksContent$NAGRMTID" type="text" value="C0419" maxlength="5" id="NeoKicksContent_NAGRMTID" class="NKTextBoxGreen" nkidx="37" style="height:17px;width:45px;POSITION:absolute; TOP: 255px; LEFT: 108px;" />
+                    <div class="NKLabelTurquoise" style="white-space:pre; POSITION:absolute; TOP: 255px; LEFT: 162px;"><pre>Sub-Agrmt Id:*</pre></div>
+                    <input name="ctl00$NeoKicksContent$NSUBAGMT" type="text" value="  3" maxlength="3" id="NeoKicksContent_NSUBAGMT" class="NKTextBoxGreen" nkidx="38" style="height:17px;width:27px;POSITION:absolute; TOP: 255px; LEFT: 297px;" />
+                    <div class="NKLabelTurquoise" style="white-space:pre; POSITION:absolute; TOP: 255px; LEFT: 333px;"><pre>Disc:</pre></div>
+                    <input name="ctl00$NeoKicksContent$NDISC" type="text" value=" 65.00" maxlength="6" id="NeoKicksContent_NDISC" class="NKTextBoxGreen" nkidx="39" style="height:17px;width:54px;POSITION:absolute; TOP: 255px; LEFT: 387px;" />
+                    <div class="NKLabelTurquoise" style="white-space:pre; POSITION:absolute; TOP: 255px; LEFT: 459px;"><pre>Est Tot Chg:</pre></div>
+                    <input name="ctl00$NeoKicksContent$NESTCHG" type="text" value=" 2069.45" maxlength="8" id="NeoKicksContent_NESTCHG" class="NKTextBoxGreen" nkidx="40" style="height:17px;width:72px;POSITION:absolute; TOP: 255px; LEFT: 576px;" />
+                    <div class="NKLabelTurquoise" style="white-space:pre; POSITION:absolute; TOP: 255px; LEFT: 657px;"><pre>CBS:</pre></div>
+                    <input name="ctl00$NeoKicksContent$NCBS" type="text" value="Y" maxlength="1" id="NeoKicksContent_NCBS" class="NKTextBoxGreen" nkidx="41" style="height:17px;width:9px;POSITION:absolute; TOP: 255px; LEFT: 702px;" />
+                    <div class="NKLabelTurquoise" style="white-space:pre; POSITION:absolute; TOP: 272px; LEFT: 9px;"><pre>Peak Season:</pre></div>
+                    <input name="ctl00$NeoKicksContent$NPEAK" type="text" value="N" maxlength="1" id="NeoKicksContent_NPEAK" class="NKTextBoxGreen" nkidx="42" style="height:17px;width:9px;POSITION:absolute; TOP: 272px; LEFT: 126px;" />
+                    <div class="NKLabelTurquoise" style="white-space:pre; POSITION:absolute; TOP: 272px; LEFT: 162px;"><pre>GRR CWT Rate:</pre></div>
+                    <input name="ctl00$NeoKicksContent$NCWTRATE" type="text" value="      " maxlength="6" id="NeoKicksContent_NCWTRATE" class="NKTextBoxGreen" nkidx="43" style="height:17px;width:54px;POSITION:absolute; TOP: 272px; LEFT: 288px;" />
+                    <div class="NKLabelTurquoise" style="white-space:pre; POSITION:absolute; TOP: 272px; LEFT: 351px;"><pre>GRR NTE C/P Amt:</pre></div>
+                    <input name="ctl00$NeoKicksContent$NNTEPAMT" type="text" value="        " maxlength="8" id="NeoKicksContent_NNTEPAMT" class="NKTextBoxGreen" nkidx="44" style="height:17px;width:72px;POSITION:absolute; TOP: 272px; LEFT: 504px;" />
+                    <div class="NKLabelTurquoise" style="white-space:pre; POSITION:absolute; TOP: 272px; LEFT: 621px;"><pre>Chg Ord:</pre></div>
+                    <input name="ctl00$NeoKicksContent$NCHANGE" type="text" value="N" maxlength="1" id="NeoKicksContent_NCHANGE" class="NKTextBoxGreen" nkidx="45" style="height:17px;width:9px;POSITION:absolute; TOP: 272px; LEFT: 702px;" />
+                    <div class="NKLabelTurquoise" style="white-space:pre; POSITION:absolute; TOP: 289px; LEFT: 9px;"><pre>Booker Nbr :*</pre></div>
+                    <input name="ctl00$NeoKicksContent$NBKNBR" type="text" value="2007-000" maxlength="8" id="NeoKicksContent_NBKNBR" class="NKTextBoxGreen" nkidx="46" style="height:17px;width:72px;POSITION:absolute; TOP: 289px; LEFT: 135px;" />
+                    <div class="NKLabelTurquoise" style="white-space:pre; POSITION:absolute; TOP: 289px; LEFT: 225px;"><pre>Typ:*</pre></div>
+                    <input name="ctl00$NeoKicksContent$NBOOKTYP" type="text" value="A" maxlength="1" id="NeoKicksContent_NBOOKTYP" class="NKTextBoxGreen" nkidx="47" style="height:17px;width:9px;POSITION:absolute; TOP: 289px; LEFT: 279px;" />
+                    <div class="NKLabelTurquoise" style="white-space:pre; POSITION:absolute; TOP: 289px; LEFT: 297px;"><pre>Name:</pre></div>
+                    <input name="ctl00$NeoKicksContent$NBOOKNME" type="text" value="REEBIE STORAGE AND MOVING CO" maxlength="28" readonly="readonly" id="NeoKicksContent_NBOOKNME" class="NKTextBoxProtectedBright NKTextBoxBright" nkidx="48" style="height:17px;width:252px;POSITION:absolute; TOP: 289px; LEFT: 351px;" />
+                    <div class="NKLabelTurquoise" style="white-space:pre; POSITION:absolute; TOP: 289px; LEFT: 612px;"><pre>Split Bk:</pre></div>
+                    <input name="ctl00$NeoKicksContent$NSPBKIND" type="text" value="N" maxlength="1" readonly="readonly" id="NeoKicksContent_NSPBKIND" class="NKTextBox" nkidx="49" style="height:17px;width:9px;POSITION:absolute; TOP: 289px; LEFT: 702px;" />
+                    <div class="NKLabelTurquoise" style="white-space:pre; POSITION:absolute; TOP: 306px; LEFT: 9px;"><pre>Adtl SP Nbr:*</pre></div>
+                    <input name="ctl00$NeoKicksContent$NTMSPNBR" type="text" maxlength="8" readonly="readonly" id="NeoKicksContent_NTMSPNBR" class="NKTextBox" nkidx="50" style="height:17px;width:72px;POSITION:absolute; TOP: 306px; LEFT: 135px;" />
+                    <div class="NKLabelTurquoise" style="white-space:pre; POSITION:absolute; TOP: 306px; LEFT: 225px;"><pre>Typ:*</pre></div>
+                    <input name="ctl00$NeoKicksContent$NTMSPTYP" type="text" maxlength="1" readonly="readonly" id="NeoKicksContent_NTMSPTYP" class="NKTextBox" nkidx="51" style="height:17px;width:9px;POSITION:absolute; TOP: 306px; LEFT: 279px;" />
+                    <div class="NKLabelTurquoise" style="white-space:pre; POSITION:absolute; TOP: 306px; LEFT: 297px;"><pre>Name:</pre></div>
+                    <input name="ctl00$NeoKicksContent$NTMSPNME" type="text" value="                              " maxlength="30" readonly="readonly" id="NeoKicksContent_NTMSPNME" class="NKTextBoxProtectedBright NKTextBoxBright" nkidx="52" style="height:17px;width:270px;POSITION:absolute; TOP: 306px; LEFT: 351px;" />
+                    <div class="NKLabelTurquoise" style="white-space:pre; POSITION:absolute; TOP: 323px; LEFT: 9px;"><pre>Self-Haul:</pre></div>
+                    <input name="ctl00$NeoKicksContent$NSHAUL" type="text" value="Y" maxlength="1" id="NeoKicksContent_NSHAUL" class="NKTextBoxGreen" nkidx="53" style="height:17px;width:9px;POSITION:absolute; TOP: 323px; LEFT: 108px;" />
+                    <div class="NKLabelTurquoise" style="white-space:pre; POSITION:absolute; TOP: 323px; LEFT: 126px;"><pre>SP:</pre></div>
+                    <input name="ctl00$NeoKicksContent$NSHAULAG" type="text" value="       " maxlength="7" id="NeoKicksContent_NSHAULAG" class="NKTextBoxGreen" nkidx="54" style="height:17px;width:63px;POSITION:absolute; TOP: 323px; LEFT: 162px;" />
+                    <div class="NKLabelTurquoise" style="white-space:pre; POSITION:absolute; TOP: 323px; LEFT: 234px;"><pre>Typ:*</pre></div>
+                    <input name="ctl00$NeoKicksContent$NSHAULTY" type="text" value=" " maxlength="1" id="NeoKicksContent_NSHAULTY" class="NKTextBoxGreen" nkidx="55" style="height:17px;width:9px;POSITION:absolute; TOP: 323px; LEFT: 288px;" />
+                    <div class="NKLabelTurquoise" style="white-space:pre; POSITION:absolute; TOP: 323px; LEFT: 306px;"><pre>Estmtr:</pre></div>
+                    <input name="ctl00$NeoKicksContent$NESTMATR" type="text" value="1111" maxlength="4" id="NeoKicksContent_NESTMATR" class="NKTextBoxGreen" nkidx="56" style="height:17px;width:36px;POSITION:absolute; TOP: 323px; LEFT: 378px;" />
+                    <div class="NKLabelTurquoise" style="white-space:pre; POSITION:absolute; TOP: 323px; LEFT: 423px;"><pre>Sales Rep:</pre></div>
+                    <input name="ctl00$NeoKicksContent$NSLSPER" type="text" value="1111" maxlength="4" id="NeoKicksContent_NSLSPER" class="NKTextBoxGreen" nkidx="57" style="height:17px;width:36px;POSITION:absolute; TOP: 323px; LEFT: 522px;" />
+                    <div class="NKLabelTurquoise" style="white-space:pre; POSITION:absolute; TOP: 323px; LEFT: 567px;"><pre>Move Coord:</pre></div>
+                    <input name="ctl00$NeoKicksContent$NMOVECRD" type="text" value="    " maxlength="4" id="NeoKicksContent_NMOVECRD" class="NKTextBoxGreen" nkidx="58" style="height:17px;width:36px;POSITION:absolute; TOP: 323px; LEFT: 675px;" />
+                    <div class="NKLabelTurquoise" style="white-space:pre; POSITION:absolute; TOP: 340px; LEFT: 9px;"><pre>Pack/Ld/Haul:</pre></div>
+                    <input name="ctl00$NeoKicksContent$NPLHIND" type="text" value="N" maxlength="1" id="NeoKicksContent_NPLHIND" class="NKTextBoxGreen" nkidx="59" style="height:17px;width:9px;POSITION:absolute; TOP: 340px; LEFT: 135px;" />
+                    <div class="NKLabelTurquoise" style="white-space:pre; POSITION:absolute; TOP: 340px; LEFT: 162px;"><pre>Comments :</pre></div>
+                    <input name="ctl00$NeoKicksContent$NREMARK" type="text" value="N" maxlength="1" readonly="readonly" id="NeoKicksContent_NREMARK" class="NKTextBox" nkidx="60" style="height:17px;width:9px;POSITION:absolute; TOP: 340px; LEFT: 261px;" />
+                    <div class="NKLabelTurquoise" style="white-space:pre; POSITION:absolute; TOP: 340px; LEFT: 279px;"><pre>MS Cde:*</pre></div>
+                    <input name="ctl00$NeoKicksContent$NMSCDE" type="text" value="N" maxlength="1" id="NeoKicksContent_NMSCDE" class="NKTextBoxGreen" nkidx="61" style="height:17px;width:9px;POSITION:absolute; TOP: 340px; LEFT: 360px;" />
+                    <div class="NKLabelTurquoise" style="white-space:pre; POSITION:absolute; TOP: 340px; LEFT: 387px;"><pre>CC Cde:*</pre></div>
+                    <input name="ctl00$NeoKicksContent$NCCCDE" type="text" value="N" maxlength="1" id="NeoKicksContent_NCCCDE" class="NKTextBoxGreen" nkidx="62" style="height:17px;width:9px;POSITION:absolute; TOP: 340px; LEFT: 468px;" />
+                    <div class="NKLabelTurquoise" style="white-space:pre; POSITION:absolute; TOP: 340px; LEFT: 495px;"><pre>Virtual Survey:</pre></div>
+                    <input name="ctl00$NeoKicksContent$NVRTSRV" type="text" value="N" maxlength="1" id="NeoKicksContent_NVRTSRV" class="NKTextBoxGreen" nkidx="63" style="height:17px;width:9px;POSITION:absolute; TOP: 340px; LEFT: 639px;" />
+                    <div class="NKLabelTurquoise" style="white-space:pre; POSITION:absolute; TOP: 340px; LEFT: 666px; visibility:hidden; "><pre>DT:*<pre></div>
+                    <input name="ctl00$NeoKicksContent$NSSP" type="text" value="V" maxlength="1" readonly="readonly" id="NeoKicksContent_NSSP" class="NKTextBox" nkidx="64" style="height:17px;width:9px;POSITION:absolute; TOP: 340px; LEFT: 711px;visibility:hidden" />
+                    <div class="NKLabelBright" style="white-space:pre; POSITION:absolute; TOP: 357px; LEFT: 9px;"><pre>F12 Register     F16 Origin      F17 Dest        F18 Details</pre></div>
+                    <div class="NKLabelBright" style="white-space:pre; POSITION:absolute; TOP: 374px; LEFT: 9px;"><pre>F19 Add Shpmt    F20 Copy Reg    F21 Interim     F23 Ref Nbrs     F24 Billing</pre></div>
+                    <input name="ctl00$NeoKicksContent$NFLD2402" type="text" value="I2002 - PROCESSING COMPLETED SUCCESSFULLY                                MORE " maxlength="78" readonly="readonly" id="NeoKicksContent_NFLD2402" class="NKTextBox" nkidx="65" style="height:17px;width:702px;POSITION:absolute; TOP: 391px; LEFT: 9px;" />
+
+                  </div>
+              </td>
+        </tr>
+    </table>
+
+	
+    </div>
+    </form>
+
+<div class="NKTextBoxProtectedBright" style="position: absolute; bottom:0; right:0; padding: 10px;">
+NEOK-TSTWEB1 
+</div>
+
 </body>
 </html>
